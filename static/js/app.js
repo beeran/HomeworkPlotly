@@ -53,8 +53,9 @@ function buildCharts(sample) {
     var pieData = {
       values: data.map(row => row.sampleValue),
       labels: data.map(row => row.otuId),
-      hoverTexts: data.map(row => row.otuLabel),
-      // hoverText : 'text',
+      text: data.map(row => row.otuLabel),
+      textinfo: 'label',
+      hoverinfo : 'text',
       type: 'pie',
       name: 'Top 10 Samples'
     };
